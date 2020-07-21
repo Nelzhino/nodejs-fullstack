@@ -13,7 +13,7 @@ server.get("/api/technologies", async (req, res) => {
         technology.logo = `${req.protocol}://${req.headers.host}/img/${technology.logo}`; 
         return technology;
     });
-
+    
     return res.send({ error: false, data: technologies});
 });
 
