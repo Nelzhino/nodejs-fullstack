@@ -1,23 +1,30 @@
 {
-  "name": "backEnd",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "seed": "node ./seeds/technology.seed.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.25"
-  },
-  "devDependencies": {
-    "dotenv": "^8.2.0",
-    "nodemon": "^2.0.4"
-  }
+    "name": "backEnd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "seed": "node ./seeds/technology.seed.js",
+        "test": "jest"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.25"
+    },
+    "devDependencies": {
+        "dotenv": "^8.2.0",
+        "jest": "^26.1.0",
+        "mockdate": "^3.0.2",
+        "mockingoose": "^2.13.2",
+        "nodemon": "^2.0.4"
+    }
 }
